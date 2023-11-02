@@ -1,5 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/*universal selector*/
 *{
     margin: 0;
     padding: 0;
@@ -8,12 +10,16 @@
     color: black;
     background: #fff;
 }
+
+/*body content*/
 body{
     display: contents;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
+
+/*from here main part in body*/
 .title {
     margin: 20px;
     padding: 20px;
@@ -30,17 +36,27 @@ body{
     content: " Fellows";
     color: #c924ab;
     animation: words 20s infinite;
+    /*words: This is the name of the animation; 
+    20s: This is the duration of the animation
+    infinite: This value means that the animation 
+    will repeat indefinitely*/
       
 }
 .title .text span::after{
     content: "";
     position: absolute;
-    width: calc(100% + 8px);
+    width: calc(100% + 8px); /*function 100% width added by 8px*/
     height: 100%;
     background-color: #fff;
     border-left: 2px solid #c924ab;
     right: -8px;
-    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite; 
+    /*cursor: This is the name of the animation; 
+    .8s: This is the duration of the animation
+    infinite: This value means that the animation 
+    will repeat indefinitely*/
+    /*Similar for typing but steps(14) It divides 
+    the animation into 14 equally spaced steps*/
 }
 
 .title .image{
@@ -67,6 +83,8 @@ body{
 
 }
 
+/*footer inside body*/
+
 .footer {
     margin-top: 10px;
     position: absolute;
@@ -88,13 +106,14 @@ a:hover{
 }
 
 
-/*cursor blinkng*/
+/*cursor blinking*/
 @keyframes cursor {
     to { 
     border-left: 2px solid #c924ab;
    
     }
 }
+/*words swapping*/
 @keyframes words{
     0%,20%{
         content:" Fellows" ;
@@ -116,8 +135,14 @@ a:hover{
         content: " Developer";
     }
 }
+
+/*typing movement*/
 @keyframes typing {
-    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+    /*keyframes have been defined at various percentages 
+    (10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, and 95%).
+    The purpose of defining keyframes in this manner is  
+    to create animations with specific intermediate states*/
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{ 
         width: 0;
     }
     5%,20%,25%,40%,60%,65%,80%,85%{
