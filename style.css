@@ -5,43 +5,29 @@
     padding-left: 10px;
     box-sizing: border-box;
     font-family: 'Poppins';
+    align-items: center;
     color:black;
+    background: #7286a5;
 }
 
 body{
-   
     display: contents;
     justify-content: center;
     align-items: center;
     min-height: 90vh;
-    
 }
 
 h1{
-    
-    color: rgb(220, 111, 230);
+    color: rgb(159, 21, 197);
+}
+
+span {
+    margin: 5px;
+    color: rgb(183, 19, 19);
 }
 h2{
     margin-top: 20px;
-}
-
-.navigation {
-    margin-top: 30px;
-    position: absolute;
-    text-align: center;
-    padding-left: 10px;
-}
-
-a{
-    border: 2px solid rgb(183, 241, 139) ;
-    text-decoration: none;
-    margin: 3px;
-    padding: 2px 10px;
-    border-radius: 5px;
-}
-a:hover{
-    color: rgb(249, 247, 247);
-    background-color: rgb(64, 87, 46);
+    
 }
 
 .quote{
@@ -55,13 +41,32 @@ a:hover{
     width: 1000px;
 }
 
-.img img{
+img{
     padding: 10px;
     width: 50%;
     height: 60%;
 }
 
-
-span {
-    color: rgb(209, 47, 169);
+p {
+    margin-top: 10px;
 }
+
+.navigation {
+    margin-top: 30px;
+    position: absolute;
+    text-align: center;
+    padding-left: 20px;
+}
+
+a{
+    border: 2px solid rgb(232, 120, 170); ;
+    text-decoration: none;
+    margin: 3px;
+    padding: 2px 10px;
+    border-radius: 5px;
+}
+a:hover{
+    color: rgb(249, 247, 247);
+    background-color: rgb(181, 63, 116);
+}
+
