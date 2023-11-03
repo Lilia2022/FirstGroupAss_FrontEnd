@@ -225,3 +225,17 @@ a:hover {
         width: calc(100% + 8px);
     }
 }
+
+
+
+/* ----------- Media Queries ----------------- */
+@media screen and (max-width: 1475px){
+    .nav-container{
+        display: none;
+    }
+
+    main{
+        display: flex;
+        width: 500px;
+    }
+}
