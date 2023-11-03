@@ -1,106 +1,161 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 /*universal selector*/
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins';
     align-items: center;
     color: black;
-    background: #fff;
+}
+
+/* Navigation styles */
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 40px;
+    width: 100%;
+    justify-content: space-between;
+    gap: 20px;
+    background: cornsilk;
+    border-radius: 15px;
+    height: 80px;
+    margin-bottom: 80px;
+}
+
+.logo-container {
+    display: flex;
+    gap: 20px;
+}
+
+.logo-text {
+    color: #6e0f5d;
+    font-size: 34px;
+}
+
+.logo {
+    width: 40px;
+    border-radius: 50%;
+    height: 40px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+li {
+    text-align: center;
+    width: 80px;
+    height: 40px;
+
 }
 
 /*body content*/
-body{
-    display: contents;
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px 10%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    gap: 30px;
 }
 
 /*from here main part in body*/
+img {
+    height: 500px;
+    width: 500px;
+}
+
 .title {
     margin: 20px;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .title .text {
     color: rgb(5, 5, 6);
 }
 
-.title .text span{
+.title .text span {
     position: relative;
 }
-.title .text span::before{
+
+.title .text span::before {
     content: " Fellows";
     color: #c924ab;
     animation: words 20s infinite;
-    /*words: This is the name of the animation; 
-    20s: This is the duration of the animation
-    infinite: This value means that the animation 
-    will repeat indefinitely*/
-      
+
 }
-.title .text span::after{
+
+.title .text span::after {
     content: "";
     position: absolute;
-    width: calc(100% + 8px); /*function 100% width added by 8px*/
+    width: calc(100% + 8px);
     height: 100%;
     background-color: #fff;
     border-left: 2px solid #c924ab;
     right: -8px;
-    animation: cursor .8s infinite, typing 20s steps(14) infinite; 
-    /*cursor: This is the name of the animation; 
-    .8s: This is the duration of the animation
-    infinite: This value means that the animation 
-    will repeat indefinitely*/
-    /*Similar for typing but steps(14) It divides 
-    the animation into 14 equally spaced steps*/
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
 }
 
-.title .image{
+.title .image {
     width: 35%;
     height: 20%;
 }
 
 .quote {
     margin: 5px;
-    padding: 5px;
+    padding: 10px;
 }
-.quote h2{
-    margin-top: -8px;
-    margin-left: 30px;
+
+.quote h2 {
+    font-size: 30px;
     color: black;
 }
 
-.quote p{
-    padding: 2px;
-    margin-top: -8px;
-    margin-left: 50px;
-    margin-right: 40px;
-    color: black;
-
+.quote p {
+    padding: 20px;
+    font-size: 26px;
+    width: 90%;
+    line-height: 2.5rem;
 }
 
 /*footer inside body*/
 
 .footer {
-    margin-top: 10px;
-    position: absolute;
+    margin-top: 80px;
+    position: relative;
     text-align: center;
-    padding-left: 20px;
-    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    gap: 30px;
 }
 
-a{
-    border: 2px solid #c924ab; ;
-    text-decoration: none;
-    margin: 3px;
-    padding: 2px 10px;
-    border-radius: 5px;
+.footer a {
+    font-size: 12px;
+    color: orangered;
 }
-a:hover{
+
+a {
+    text-decoration: none;
+    color: #c924ab;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+}
+
+a:hover {
     color: rgb(249, 247, 247);
     background-color: #c924ab;
 }
@@ -108,44 +163,79 @@ a:hover{
 
 /*cursor blinking*/
 @keyframes cursor {
-    to { 
-    border-left: 2px solid #c924ab;
-   
+    to {
+        border-left: 2px solid #c924ab;
+
     }
 }
+
 /*words swapping*/
-@keyframes words{
-    0%,20%{
-        content:" Fellows" ;
+@keyframes words {
+
+    0%,
+    20% {
+        content: " Fellows";
     }
 
-    21%,40%{
-        content:" Coder front-End" ;
+    21%,
+    40% {
+        content: " Front-End Developers";
     }
 
-    41%,60%{
-        content:" in section B" ;
+    41%,
+    60% {
+        content: " in section B";
     }
 
-    61%,80%{
-        content:" in Tech4dev" ;
+    61%,
+    80% {
+        content: " in Tech4dev";
     }
 
-    81%,100%{
-        content: " Developer";
+    81%,
+    100% {
+        content: " Amazing Techsters";
     }
 }
 
 /*typing movement*/
 @keyframes typing {
-    /*keyframes have been defined at various percentages 
-    (10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, and 95%).
-    The purpose of defining keyframes in this manner is  
-    to create animations with specific intermediate states*/
-    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{ 
+
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95% {
         width: 0;
     }
-    5%,20%,25%,40%,60%,65%,80%,85%{
+
+    5%,
+    20%,
+    25%,
+    40%,
+    60%,
+    65%,
+    80%,
+    85% {
         width: calc(100% + 8px);
+    }
+}
+
+
+
+/* ----------- Media Queries ----------------- */
+@media screen and (max-width: 1475px){
+    .nav-container{
+        display: none;
+    }
+
+    main{
+        display: flex;
+        width: 500px;
     }
 }
