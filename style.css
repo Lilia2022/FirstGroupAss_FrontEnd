@@ -42,7 +42,7 @@
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 20px;
 }
 
 li {
@@ -57,7 +57,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    padding: 20px 10%;
+    padding: 20px 30px;
 }
 
 main {
@@ -229,7 +229,7 @@ a:hover {
 
 
 /* ----------- Media Queries ----------------- */
-@media screen and (max-width: 1475px){
+@media screen and (max-width: 1200px){
     .nav-container{
         display: none;
     }
