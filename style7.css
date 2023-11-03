@@ -1,0 +1,28 @@
+/*image-size*/
+img {
+  height: 300px;
+  width: 600px;
+
+};
+/*webpage-body*/
+body {
+  width: 200vw;
+  height: 60vh;
+  padding: 10px;
+  background-color: rgb(234, 225, 225);
+};
+/*Quote navigation links*/
+.navigation {
+  padding-left: 5px;  
+}
+
+a{
+  border: 1px solid rgb(163, 117, 140); ;
+  text-decoration: none;
+  padding: 3px 7px;
+  border-radius: 5px;
+};
+  
+  h1, p{
+    font-family: ;
+  }
