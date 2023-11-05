@@ -1,3 +1,4 @@
+
 /*image-size*/
 img {
   height: 300px;
@@ -7,22 +8,63 @@ img {
 /*webpage-body*/
 
 body {
-  width: 200vw;
-  height: 60vh;
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   background-color: rgb(244, 235, 235);
 }
-
-/*Quote navigation links*/
-.navigation {
-  padding-left: 5px;  
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
 }
 
-a{
-  border: 1px solid rgb(163, 117, 140); ;
+
+/*footer section*/
+.footer,
+.footer-3 {
+  margin-top: 80px;
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  gap: 30px;
+}
+
+.footer a {
+  font-size: 12px;
+  color: orangered;
+}
+
+a {
   text-decoration: none;
-  padding: 3px 7px;
-  border-radius: 5px;
+  color: #20051b;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
 }
+
+a:hover {
+  color: rgb(249, 247, 247);
+  background-color: #c924ab;
+}
+
   
-  
+
+@media screen and (max-width: 482px) {
+  .title .image{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+  }
+  .quote {
+    width: 300px;
+    margin-bottom: 40px;
+  }
+}
