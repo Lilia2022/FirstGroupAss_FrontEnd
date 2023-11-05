@@ -54,13 +54,13 @@ p {
     margin-top: 10px;
 }
 
-/*Styling foot part*/
+/*Styling footer part*/
 
 .navigation {
     margin-top: 30px;
     position: absolute;
     text-align: center;
-    padding-left: 20px;
+    padding-left: 40px;
 }
 
 a{
